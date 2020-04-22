@@ -8,7 +8,12 @@ import { Recipe } from '../../../models/Recipe.model';
 })
 export class RecipeListComponent implements OnInit {
 
-  public recipes: Recipe[] = [];
+  public recipes: Recipe[] = [
+    new Recipe('Burger', 'This is the description of recipe', 'https://via.placeholder.com/150'),
+    new Recipe('Burger', 'This is the description of recipe', 'https://via.placeholder.com/150'),
+    new Recipe('Burger', 'This is the description of recipe', 'https://via.placeholder.com/150'),
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
